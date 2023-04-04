@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snake Game</title>
+    <style>
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2E3840;
+            overflow: hidden;
+        }
+
+        canvas {
+            background: white;
+        }
+
+        #high-score {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 15px
+                /* margin: 10px auto;
+            font-size: medium;
+            color: aliceblue; */
+        }
+
+        #your-score {
+            position: absolute;
+            top: 35px;
+            right: 25px;
+            font-size: 15px
+                /* margin: 10px auto;
+            font-size: medium;
+            color: aliceblue; */
+        }
+
+        #instructions {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="high-score">High Score: 0</div>
+    <div id="your-score">Your Score: 0</div>
+    <div id="instructions">Please press Enter Key to start the game 🐍</div>
+    <canvas id="gameboard"></canvas>
+    <script src="index.js"></script>
+</body>
+
+</html>
