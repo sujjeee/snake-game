@@ -56,7 +56,7 @@ function gameLoop() {
         snake.push({});
         food = { x: Math.floor(Math.random() * width), y: Math.floor(Math.random() * height) };
         score++;
-        speedTime -= 10;
+        speedTime -= 5;
         clearInterval(interval);
         interval = setInterval(gameLoop, speedTime);
         document.getElementById('your-score').innerHTML = `your Score: ${score}`
